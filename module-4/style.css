@@ -1,0 +1,156 @@
+*{
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+}
+body{
+	font-family: 'Lato', sans-serif;
+}
+.container{
+	width: 1170px;
+	margin:0 auto;
+}
+.active{
+	color:#1abc9c;
+}
+.header-li{
+	list-style: none;
+}
+.header_logo{
+	display: inline;
+}
+.header-ul{
+	display: inline;
+}
+.header-li{
+	display: inline-block;
+	text-transform: uppercase;
+	margin-right: 30px;
+}
+.header_logo{
+	float: left;
+	font-size: 30px;
+}
+.header_logo::first-letter{
+	color:#1abc9c;
+}
+.nav{
+	float: right;
+}
+.header_style{
+	padding-top: 42px;
+	margin-bottom: 110px;
+}
+.clearfix::after{
+content: "";
+display: table;
+clear: both;
+}
+.main_h2{
+	text-align: center;
+	margin-bottom: 34px;
+	font-weight: 900;
+}
+.section_main_h2{
+	text-align: center;
+	margin-bottom: 34px;
+	font-weight: 400;
+}
+.main_h2::after{	
+content: "";
+display: block;
+margin-bottom: 34px;
+width: 150px;
+height: 8px;
+background-color: #1abc9c;
+margin:0 auto;
+margin-top: 34px;
+}
+
+	
+.main_li{
+	width: 255px;
+	height: 321px;
+	display: inline-block;
+	margin-right: 30px;
+	margin-bottom: 33px;
+	
+}
+.main_li_img{
+	display: block;
+	width: 255px;
+	height: 284px;
+}
+
+.main-name-product{
+	line-height: 40px;
+	padding-left: 14px;
+	width: 200px;
+	text-transform: uppercase;
+	height: 40px;
+	font-size: 18px;
+	background-color: black;
+	color: white;
+	float: left;
+}
+.main-name-product:hover,
+.main-product-price:hover{
+	background-color: #4ec6ab;
+}
+
+
+.main-product-price{
+	float: left;
+	background-color: #8c8c8c;
+	width: 54px;
+	font-size: 18px;
+	color:white;
+	padding-left: 10px;
+	line-height: 40px;
+	height: 40px;
+}
+
+.section_one{
+	margin-bottom: 104px;
+}
+
+.section2_main-content{
+	width: 350px;
+	height: 500px;
+	float: left;
+	list-style: none;
+	margin-left: 30px;
+}
+
+.section_second{
+	margin-bottom: 800px;
+}
+
+.section2_main_h3::after{
+	margin-top: 10px;
+	margin-bottom: 25px;
+	content: '';
+	display: block;
+	width: 134px;
+	height: 4px;
+	background-color: #4ec6ab;
+}
+
+.section2_img{
+	margin-bottom: 20px;
+}
+
+.section2_btn{
+  border-radius: 3px;
+  border: 1px solid rgb(78, 198, 171);
+  background-color: rgb(78, 198, 171);
+  width: 159px;
+  height: 51px;
+  margin-top: 9px;
+  color:white;
+}
+
+.section2_main-content p {
+	font-size: 14px;
+	line-height: 22px;
+}
