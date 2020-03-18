@@ -1,0 +1,254 @@
+*{
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+}
+.active{
+	color: #1abc9c;
+}
+.container{
+	width: 1170px;
+	margin: 0 auto;
+}
+.navigation{
+display: inline-block;
+margin-bottom: 34px;
+
+}
+.logo:first-letter{
+	color: green;
+}
+.logo{
+	font-size: 30px;
+	text-decoration: none;
+	color: black;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+
+.nav-ul{
+	display: inline-block;
+	    margin-top: 10px;
+	   width: 1060px;
+	    text-align: right;
+	    vertical-align: middle;
+}
+.clearfix::after{
+content: '';
+display: table;
+clear: both;
+}
+.nav-li{
+	display: inline-block;
+	margin-right:26px;
+	text-transform: uppercase;
+	vertical-align: middle;
+}
+.nav-li:last-child{
+margin-right:0px;	
+}
+header{
+	margin-top: 37px;
+}
+
+.header-img{
+	background-image: url('assets/img/Rectangle.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	
+}
+.header-img-h1{
+	text-align: center;
+	vertical-align: middle;
+	color:white;
+	padding-bottom: 34px;
+	padding-top: 216px;
+}
+
+.header-img-p{
+	text-align: center;
+	vertical-align: middle;
+	color:white;
+	padding-bottom: 284px;
+
+}
+.header-main{
+	position: relative;
+}
+.header-btn{
+	width: 100%;
+	position: absolute;
+	top:222px;
+}
+.prev{
+	background-image: url('assets/img/prev.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 90px;
+	width: 104px;
+	border: none;
+	background-color: rgba(26,188,156,0.6);
+	float: left;
+	cursor: pointer;
+}
+.next{
+	background-image: url('assets/img/next.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 90px;
+	width: 104px;
+	border: none;
+	background-color: rgba(26,188,156,0.6);
+	float: right;
+	cursor: pointer;
+}
+
+.collection{
+	background-color: rgb(233,240,253);
+	padding-top: 97px;
+}
+.collection-h2{
+	text-align: center;
+	text-transform: uppercase;
+	
+}
+.collection-h2::after{
+	content: '';
+	display: block;
+	width: 164px;
+  	height: 7px;
+  	background-color: rgb(26, 188, 156);
+  	margin:0 auto;
+  	margin-top:30px;
+  	margin-bottom: 80px;
+}
+.collection-main{
+	position: relative;
+	padding-bottom: 100px;
+}
+.collection-ul{
+	font-size: 0px;
+}
+.collection-li{
+	display: inline-block;
+	margin-right: 30px;
+	position: relative;
+}
+.collection-li:last-child{
+	margin-right: 0px;
+}
+.collection-li img {
+	display: block;
+	height: 100%;
+
+}
+.collection-name-product{
+	font-size: 18px;
+	display: inline-block;
+	background-color: black;
+	color: white;
+	width: 200px;
+	height: 40px;
+	line-height: 40px;
+	text-transform: uppercase;
+	padding-left: 18px;
+
+}
+.collection-price{
+	display: inline-block;
+	font-size: 18px;
+	width: 54px;
+	height: 40px;
+	background-color:rgba(140,140,140,0.8);
+	line-height: 40px;
+	text-transform: uppercase;	
+	padding-left: 12px;
+	color: white;
+}
+
+.card{
+	font-size: 14px;
+	position: absolute;
+	top:50%;
+	left: 50%;
+	transform: translate(-50%,-50%);	
+}
+
+.like{
+  width: 50px;
+  background-color: transparent;
+  height: 50px;
+  border-width: 1px;
+  border-color: rgb(255, 255, 255);
+  border-style: solid;
+  background-image: url('assets/img/like.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.strelka{
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  border-width: 1px;
+  border-color: rgb(255, 255, 255);
+  border-style: solid;
+  background-image: url('assets/img/strelki.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.oclock{
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  border-width: 1px;
+  border-color: rgb(255, 255, 255);
+  border-style: solid;
+  background-image: url('assets/img/oclock.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.collection-li-btn{
+	display: inline-block;
+	text-decoration: none
+}
+.collection-li-link{
+	display: inline-block;
+	text-align: center;
+	line-height: 48px;
+	color: white;
+	text-decoration: none;
+	font-size: 14px;
+	width: 164px;
+  	height: 48px;
+  	border-width: 1px;
+  	border-color: rgb(255, 255, 255);
+ 	 border-style: solid;
+  	background-color: rgb(50, 50, 50);
+  	background-image: url('assets/img/card.png');
+  	background-repeat: no-repeat;
+  	background-position: left 15px center;
+  	padding-left: 35px;
+}
+.collection-li-btn:hover{
+background-color: #1abc9c;
+}
+.collection-name-product:hover{
+	background-color: #1abc9c;
+}
+.card{
+	display: none;
+}
+
+.collection-li:hover .card{
+display: block;
+}
+
+.footer-h5{
+	text-align: center;
+	padding-top: 40px;
+	padding-bottom: 38px;
+	background-color: #323232;
+	color:white;
+}
