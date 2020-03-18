@@ -1,3 +1,7 @@
+:root{
+	--main-fonts:'Roboto', sans-serif;
+	--main-color:#1abc9c;
+}
 *{
 	padding: 0px;
 	margin: 0px;
@@ -15,8 +19,10 @@ display: inline-block;
 margin-bottom: 34px;
 
 }
-.logo:first-letter{
-	color: green;
+
+.logo::first-letter{
+	font-weight: 900;
+	color: var(--main-color);
 }
 .logo{
 	font-size: 30px;
@@ -24,6 +30,7 @@ margin-bottom: 34px;
 	color: black;
 	display: inline-block;
 	vertical-align: middle;
+	font-family: var(--main-fonts);
 }
 
 
@@ -33,6 +40,8 @@ margin-bottom: 34px;
 	   width: 1060px;
 	    text-align: right;
 	    vertical-align: middle;
+	    font-family: var(--main-fonts);
+	    font-weight: 900;
 }
 .clearfix::after{
 content: '';
@@ -63,18 +72,23 @@ header{
 	vertical-align: middle;
 	color:white;
 	padding-bottom: 34px;
-	padding-top: 216px;
+	padding-top: 195px;
+	font-weight: bold;
+	font-size: 60px;
 }
 
 .header-img-p{
-	text-align: center;
+	padding-left: 210px;
 	vertical-align: middle;
 	color:white;
 	padding-bottom: 284px;
+	font-size: 24px;
 
 }
 .header-main{
 	position: relative;
+	font-family: var(--main-fonts);
+
 }
 .header-btn{
 	width: 100%;
@@ -111,6 +125,8 @@ header{
 .collection-h2{
 	text-align: center;
 	text-transform: uppercase;
+	font-family: var(--main-fonts);
+	font-size: 48px;
 	
 }
 .collection-h2::after{
@@ -158,7 +174,7 @@ header{
 .collection-price{
 	display: inline-block;
 	font-size: 18px;
-	width: 54px;
+	width: 55px;
 	height: 40px;
 	background-color:rgba(140,140,140,0.8);
 	line-height: 40px;
@@ -169,10 +185,14 @@ header{
 
 .card{
 	font-size: 14px;
-	position: absolute;
-	top:50%;
-	left: 50%;
-	transform: translate(-50%,-50%);	
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 93%;
+    height: 84%;    
+}
+.card:hover{
+background-color: rgba(50,50,50,0.50);
 }
 
 .like{
@@ -208,10 +228,16 @@ header{
   background-repeat: no-repeat;
   background-position: center;
 }
-
+.card-position{
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);		
+	text-align: center;
+}
 .collection-li-btn{
 	display: inline-block;
-	text-decoration: none
+	text-decoration: none;	
 }
 .collection-li-link{
 	display: inline-block;
@@ -231,18 +257,8 @@ header{
   	background-position: left 15px center;
   	padding-left: 35px;
 }
-.collection-li-btn:hover{
-background-color: #1abc9c;
-}
-.collection-name-product:hover{
-	background-color: #1abc9c;
-}
-.card{
-	display: none;
-}
-
-.collection-li:hover .card{
-display: block;
+.collection-li-btn:hover button{
+background-color: var(--main-color);
 }
 
 .footer-h5{
@@ -251,4 +267,20 @@ display: block;
 	padding-bottom: 38px;
 	background-color: #323232;
 	color:white;
+}
+
+.card-position{
+	display: none;
+}
+
+
+.card:hover .card-position{
+	display: block;
+}
+
+.collection-info:hover .collection-name-product{
+	background-color: var(--main-color);
+}
+.collection-info:hover .collection-price{
+	background-color: var(--main-color);
 }
