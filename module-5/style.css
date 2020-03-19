@@ -1,13 +1,15 @@
 :root{
 	--main-fonts:'Roboto', sans-serif;
 	--main-color:#1abc9c;
+	--second-fonts:'Roboto';
+	--footer-fonts:'Open Sans';
 }
 *{
 	padding: 0px;
 	margin: 0px;
 	box-sizing: border-box;
 }
-.active{
+.nav-li a:hover{
 	color: #1abc9c;
 }
 .container{
@@ -23,6 +25,7 @@ margin-bottom: 34px;
 .logo::first-letter{
 	font-weight: 900;
 	color: var(--main-color);
+	font-family: var(--main-fonts);
 }
 .logo{
 	font-size: 30px;
@@ -30,13 +33,12 @@ margin-bottom: 34px;
 	color: black;
 	display: inline-block;
 	vertical-align: middle;
-	font-family: var(--main-fonts);
 }
 
 
 .nav-ul{
-	display: inline-block;
-	    margin-top: 10px;
+	float: right;
+	    padding-top: 10px;
 	   width: 1060px;
 	    text-align: right;
 	    vertical-align: middle;
@@ -54,46 +56,51 @@ clear: both;
 	text-transform: uppercase;
 	vertical-align: middle;
 }
+.nav-li a {
+	text-decoration: none;
+	color: black;
+}
 .nav-li:last-child{
 margin-right:0px;	
 }
 header{
-	margin-top: 37px;
+	padding-top: 37px;
 }
 
-.section-img-slider{
-	background-image: url('assets/img/Rectangle.png');
-	background-repeat: no-repeat;
-	background-size: cover;
-	
+.section-img-slider {
+	position: relative;
+}
+.section-img-size{
+
 }
 .section-img-h1-slider{
+	color: white;
+	
 	text-align: center;
-	vertical-align: middle;
-	color:white;
-	padding-bottom: 34px;
-	padding-top: 195px;
 	font-weight: bold;
 	font-size: 60px;
 }
 
 .section-img-p-slider{
-	padding-left: 210px;
-	vertical-align: middle;
+	
+	
 	color:white;
-	padding-bottom: 284px;
+	
 	font-size: 24px;
 
 }
 .section-main-slider{
-	position: relative;
+	position: absolute;
+	top: 50%;
+	left:50%;
+	transform: translate(-50%,-50%);
 	font-family: var(--main-fonts);
 
 }
 .section-btn-slider{
-	width: 100%;
-	position: absolute;
-	top:222px;
+	width: 1110px;
+	
+	
 }
 .prev{
 	background-image: url('assets/img/prev.png');
@@ -119,6 +126,7 @@ header{
 }
 
 .collection{
+	position: relative;
 	background-color: rgb(233,240,253);
 	padding-top: 97px;
 }
@@ -162,6 +170,7 @@ header{
 }
 .collection-name-product{
 	font-size: 18px;
+	font-family: var(--second-fonts);
 	display: inline-block;
 	background-color: black;
 	color: white;
@@ -170,6 +179,7 @@ header{
 	line-height: 40px;
 	text-transform: uppercase;
 	padding-left: 18px;
+	font-weight: 600;
 
 }
 .collection-price{
@@ -182,6 +192,16 @@ header{
 	text-transform: uppercase;	
 	padding-left: 12px;
 	color: white;
+	font-weight: 600;
+	font-family: var(--second-fonts);
+}
+.section-style-img-bg{
+	position: absolute;
+	 left:0px;
+	 top: 0px; 
+	 width: 100%; 
+	 height: 100%; 
+	 background-color: rgba(50,50,50,0.50);
 }
 
 .card{
@@ -198,35 +218,21 @@ border: 10px solid rgba(255, 255, 255, 0.5);
 }
 
 .like{
-  width: 50px;
-  background-color: transparent;
-  height: 50px;
-  border-width: 1px;
-  border-color: rgb(255, 255, 255);
-  border-style: solid;
   background-image: url('assets/img/like.png');
-  background-repeat: no-repeat;
-  background-position: center;
 }
 .strelka{
-  width: 50px;
-  height: 50px;
-  background-color: transparent;
-  border-width: 1px;
-  border-color: rgb(255, 255, 255);
-  border-style: solid;
   background-image: url('assets/img/strelki.png');
-  background-repeat: no-repeat;
-  background-position: center;
 }
 .oclock{
-  width: 50px;
+ background-image: url('assets/img/oclock.png'); 
+}
+.btn{
+	  width: 50px;
   height: 50px;
   background-color: transparent;
   border-width: 1px;
   border-color: rgb(255, 255, 255);
   border-style: solid;
-  background-image: url('assets/img/oclock.png');
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -241,12 +247,11 @@ border: 10px solid rgba(255, 255, 255, 0.5);
 	display: inline-block;
 	text-decoration: none;	
 }
+.collection-ul-btn{
+	list-style: none;
+}
 .collection-li-link{
-	display: inline-block;
-	text-align: center;
-	line-height: 48px;
 	color: white;
-	text-decoration: none;
 	font-size: 14px;
 	width: 164px;
   	height: 48px;
@@ -285,4 +290,10 @@ background-color: var(--main-color);
 }
 .collection-info:hover .collection-price{
 	background-color: var(--main-color);
+}
+.footer-h5{
+	font-family: var(--footer-fonts);
+}
+.footer-style{
+	color: var(--main-color);
 }
