@@ -22,6 +22,8 @@ margin-bottom: 34px;
 
 }
 
+
+
 .logo::first-letter{
 	font-weight: 900;
 	color: var(--main-color);
@@ -33,6 +35,7 @@ margin-bottom: 34px;
 	color: black;
 	display: inline-block;
 	vertical-align: middle;
+	font-family: var(--main-fonts);
 }
 
 
@@ -204,6 +207,13 @@ header{
 	 background-color: rgba(50,50,50,0.50);
 }
 
+.section-img-size{
+	width: 100%;
+}
+.section-main-info{
+	position: absolute; 
+	left: 160px;
+}
 .card{
 	font-size: 14px;
     position: absolute;
