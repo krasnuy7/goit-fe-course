@@ -9,18 +9,19 @@
 	margin: 0px;
 	box-sizing: border-box;
 }
+
+
 .nav-li a:hover{
 	color: #1abc9c;
 }
 .container{
 	width: 1170px;
 	margin: 0 auto;
+	padding: 0 30px;
 }
 .navigation{
 padding-bottom: 34px;
 }
-
-
 
 .logo::first-letter{
 	font-weight: 900;
@@ -46,9 +47,9 @@ padding-bottom: 34px;
 	    font-weight: 900;
 }
 .clearfix::after{
-content: '';
-display: table;
-clear: both;
+		content: '';
+		display: table;
+		clear: both;
 }
 .nav-li{
 	display: inline-block;
@@ -61,16 +62,14 @@ clear: both;
 	color: black;
 }
 .nav-li:last-child{
-padding-right:0px;	
+	padding-right:0px;	
 }
 header{
 	padding-top: 37px;
 }
-
 .section-img-slider {
 	position: relative;
 }
-
 .section-img-slider::before{
 	content: '';
 	position: absolute;
@@ -187,7 +186,11 @@ header{
 	text-transform: uppercase;
 	padding-left: 18px;
 	font-weight: 600;
+}
 
+.collection-name-product > a{
+	text-decoration: none;
+	color:white;
 }
 .collection-price{
 	display: inline-block;
@@ -217,11 +220,15 @@ header{
     top: 0px;
     left: 0px;
     width: 100%;
-    height: 89%;    
+    height: 100%;    
+}
+.collection-overflow-card{
+	position: relative;
 }
 .card:hover{
 background-color: rgba(50,50,50,0.50);
 border: 10px solid rgba(255, 255, 255, 0.5);
+background-clip: padding-box;
 }
 
 .like{
@@ -275,13 +282,7 @@ border: 10px solid rgba(255, 255, 255, 0.5);
 background-color: var(--main-color);
 }
 
-.footer-h5{
-	text-align: center;
-	padding-top: 40px;
-	padding-bottom: 38px;
-	background-color: #323232;
-	color:white;
-}
+
 
 .card-position{
 	display: none;
@@ -296,11 +297,24 @@ background-color: var(--main-color);
 	background-color: var(--main-color);
 }
 .collection-info:hover .collection-price{
-	background-color: var(--main-color);
+ background-color: #1abc9c;
+  opacity: 0.439;
+
+
 }
-.footer-h5{
+.footer-p{
 	font-family: var(--footer-fonts);
+	display: 
 }
 .footer-style{
 	color: var(--main-color);
+	text-decoration: none;
+}
+
+.footer-p{
+	text-align: center;
+	padding-top: 40px;
+	padding-bottom: 38px;
+	background-color: #323232;
+	color:white;
 }
