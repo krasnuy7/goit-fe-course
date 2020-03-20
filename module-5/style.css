@@ -178,7 +178,6 @@ header{
 	font-size: 18px;
 	font-family: var(--second-fonts);
 	display: inline-block;
-	background-color: black;
 	color: white;
 	width: 200px;
 	height: 40px;
@@ -197,7 +196,7 @@ header{
 	font-size: 18px;
 	width: 55px;
 	height: 40px;
-	background-color:rgba(140,140,140,0.8);
+	background-color:rgba(255,255,255,0.4);
 	line-height: 40px;
 	text-transform: uppercase;	
 	padding-left: 12px;
@@ -292,16 +291,21 @@ background-color: var(--main-color);
 .card:hover .card-position{
 	display: block;
 }
+.collection-info{
+	background-color: black;
+}
 
 .collection-info:hover .collection-name-product{
 	background-color: var(--main-color);
 }
 .collection-info:hover .collection-price{
- background-color: #1abc9c;
-  opacity: 0.439;
+background-color: var(--main-color);
+opacity: 0.85;
 
 
 }
+
+
 .footer-p{
 	font-family: var(--footer-fonts);
 	display: 
