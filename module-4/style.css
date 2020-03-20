@@ -6,6 +6,7 @@
 .container{
 	width: 1170px;
 	margin:0 auto;
+	padding: 0 30px;
 }
 .active{
 	color:#1abc9c;
@@ -14,6 +15,8 @@
 	list-style: none;
 }
 .header_logo{
+	text-decoration: none;
+	color: black;
 	display: inline;
 	font-family: 'Roboto', sans-serif;
 }
@@ -51,7 +54,7 @@ color:#1abc9c;
 }
 .header_style{
 	padding-top: 42px;
-	margin-bottom: 110px;
+	padding-bottom: 110px;
 }
 .clearfix::after{
 content: "";
@@ -60,14 +63,17 @@ clear: both;
 }
 .main_h2{
 	text-align: center;
-	margin-bottom: 34px;
+	padding-bottom: 34px;
 	font-weight: 900;
 	font-family: 'Roboto', sans-serif;
 	font-size: 48px;
 }
+.main_li:nth-child(4n){
+	margin-right: 0px;
+}
 .section_main_h2{
 	text-align: center;
-	margin-bottom: 34px;
+	padding-bottom: 34px;
 	font-weight: 900;
 	font-family: 'Roboto', sans-serif;
 	font-size: 48px;
@@ -83,14 +89,18 @@ margin:0 auto;
 margin-top: 34px;
 }
 
-	
+.main_ul{
+	font-family: 'Open Sans', sans-serif;
+}	
 .main_li{
 	width: 255px;
 	height: 321px;
-	display: inline-block;
+	float: left;
+	list-style: none;
 	margin-right: 30px;
 	margin-bottom: 33px;
-	
+	font-family: 'Roboto', sans-serif;
+	font-weight: 900;
 }
 .main_li_img{
 	display: block;
@@ -105,42 +115,47 @@ margin-top: 34px;
 	text-transform: uppercase;
 	height: 40px;
 	font-size: 18px;
-	background-color: black;
 	color: white;
 	float: left;
 }
-.main-name-product:hover,
-.main-product-price:hover{
-	background-color: #4ec6ab;
+.main-name-product > a {
+	text-decoration: none;
+	color:white;
 }
-
+.main-info-about-product:hover{
+background-color: #1abc9c;
+}
+.main-info-about-product{
+	background-color: black;
+}
 
 .main-product-price{
 	float: left;
-	background-color: #8c8c8c;
-	width: 54px;
+	width: 55px;
 	font-size: 18px;
 	color:white;
 	padding-left: 10px;
 	line-height: 40px;
 	height: 40px;
+	background-color: rgba(255, 255, 255,0.60);
 }
 
 .section_one{
-	margin-bottom: 104px;
+	padding-bottom: 104px;
 }
 
 .section2_main-content{
 	width: 350px;
-	height: 500px;
+	padding-bottom: 15px;
 	float: left;
 	list-style: none;
-	margin-left: 30px;
+	margin-right: 30px;
+}
+.section2_main-content:last-child{
+margin-right: 0px;
 }
 
-.section_second{
-	margin-bottom: 800px;
-}
+
 
 .section2_main_h3::after{
 	margin-top: 10px;
@@ -153,9 +168,11 @@ margin-top: 34px;
 }
 
 .section2_img{
-	margin-bottom: 20px;
+	padding-bottom: 20px;
 }
-
+.section2_main_p{
+	padding-bottom: 10px;
+}
 .section2_btn{
 	display: inline-block;
 	text-align: center;
@@ -166,7 +183,6 @@ margin-top: 34px;
   background-color: rgb(78, 198, 171);
   width: 159px;
   height: 51px;
-  margin-top: 9px;
   color:white;
 }
 
