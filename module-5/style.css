@@ -295,15 +295,10 @@ background-color: var(--main-color);
 	background-color: black;
 }
 
-.collection-info:hover .collection-name-product{
+.collection-info:hover{
 	background-color: var(--main-color);
 }
-.collection-info:hover .collection-price{
-background-color: var(--main-color);
-opacity: 0.85;
 
-
-}
 
 
 .footer-p{
