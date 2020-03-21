@@ -63,13 +63,16 @@ clear: both;
 }
 .main_h2{
 	text-align: center;
-	padding-bottom: 34px;
+	margin-bottom: 34px;
 	font-weight: 900;
 	font-family: 'Roboto', sans-serif;
 	font-size: 48px;
 }
 .main_li:nth-child(4n){
 	margin-right: 0px;
+}
+.main_li:nth-last-child(-n+4){
+margin-bottom: 0px;
 }
 .section_main_h2{
 	text-align: center;
@@ -146,7 +149,7 @@ background-color: #1abc9c;
 
 .section2_main-content{
 	width: 350px;
-	padding-bottom: 15px;
+	margin-bottom: 15px;
 	float: left;
 	list-style: none;
 	margin-right: 30px;
