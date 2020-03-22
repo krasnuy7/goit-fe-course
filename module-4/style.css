@@ -17,17 +17,17 @@
 .header_logo{
 	text-decoration: none;
 	color: black;
-	display: inline;
+	display: block;
 	font-family: 'Roboto', sans-serif;
 }
 .header_logo::first-letter{
 	font-weight: 900;
 }
 .header-ul{
-	display: inline;
+	
 }
 .header-li{
-	display: inline-block;
+	float: left;
 	text-transform: uppercase;
 	margin-right: 30px;
 }
@@ -125,8 +125,9 @@ margin-top: 34px;
 	text-decoration: none;
 	color:white;
 }
-.main-info-about-product:hover{
-background-color: #1abc9c;
+
+.main_li:hover .main-info-about-product{
+background-color: #1abc9c;	
 }
 .main-info-about-product{
 	background-color: black;
@@ -149,7 +150,6 @@ background-color: #1abc9c;
 
 .section2_main-content{
 	width: 350px;
-	margin-bottom: 15px;
 	float: left;
 	list-style: none;
 	margin-right: 30px;
