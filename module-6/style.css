@@ -76,6 +76,7 @@ header{
 	font-family: var(--font-montserrat);
 	text-transform: uppercase;
 	font-size: 30px;
+	margin-bottom: 66px;
 }
 .section-services-main-h2-span{
 	display: block;
@@ -98,7 +99,10 @@ header{
 .section-main-ul-li{
 	width: 320px;
 	list-style: none;
-	z-index: 100;
+	background-repeat: no-repeat;
+	padding-left: 50px;
+	background-position: left top;
+	margin-bottom: 100px;
 }
 
 .section-main-ul{
@@ -107,31 +111,23 @@ header{
 	flex-wrap: wrap;
 	justify-content: space-between;
 }
-.section-main-ul-li::before{
-	content: '';
-	display: block;
-  	height: 32px;
-	background-repeat: no-repeat;
-	position: relative;
-	left: -60px;
-	top: 35px;	
-}
-.icon-oclock::before{
+
+.icon-oclock{
 background-image: url('assets/icon/icon-oclock.png');	
 }
-.icon-disign::before{
+.icon-disign{
 background-image: url('assets/icon/icon-disign.png');	
 }
-.icon-comp::before{
+.icon-comp{
 background-image: url('assets/icon/icon-comp.png');	
 }
-.icon-book::before{
+.icon-book{
 background-image: url('assets/icon/icon-book.png');	
 }
-.icon-home::before{
+.icon-home{
 background-image: url('assets/icon/icon-home.png');	
 }
-.icon-pic::before{
+.icon-pic{
 background-image: url('assets/icon/icon-pic.png');	
 }
 
@@ -141,7 +137,7 @@ background-image: url('assets/icon/icon-pic.png');
 	font-family: var(--font-montserrat);
 }
 .section-services{
-	margin-bottom: 100px;
+	
 }
 .secction-ourteam-main-p{
 	text-align: center;
