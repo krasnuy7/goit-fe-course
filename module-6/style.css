@@ -1,5 +1,5 @@
 :root{
-	--main-color:#1abc9c;
+	--main-color:#95E1D3;
 	--font-montserrat:'Montserrat', sans-serif;
 }
 
@@ -38,7 +38,6 @@ header{
 	color:var(--main-color);
 	font-family: var(--font-montserrat);
 	font-weight: 700;
-	opacity: 0.5;
 }
 
 
@@ -173,6 +172,7 @@ background-image: url('assets/icon/icon-pic.png');
 .secction-ourteam-main-ul-li{
 	list-style: none;
 	margin-bottom: 86px;
+	width: 380px;
 }
 .secction-ourteam-main-ul{
 	display: flex;
@@ -182,6 +182,8 @@ background-image: url('assets/icon/icon-pic.png');
 .secction-ourteam-main-ul-li-div{
 	position: relative;
 	margin-bottom: 44px;
+	transition: all 200ms linear;
+
 }
 .secction-ourteam-main-ul-li-div::before{
 	content: '';
@@ -200,13 +202,13 @@ background-image: url('assets/icon/icon-pic.png');
   .secction-ourteam-main-ul-li-div-img{
   	display: block;
   	height: 100%;
-
   }
   .section-main-ul-li-p{
   	font-family: 'Roboto', sans-serif;
   	 line-height: 1.6;
   	 color: rgb(153, 153, 153);
-  	 font-size: 15px;
+  	 font-size: 14px;
+  	 font-weight: 400;
   }
 
 
@@ -224,19 +226,18 @@ background-image: url('assets/icon/icon-pic.png');
 }
 .li-overlay{
 	position: relative;
-	list-style: none;
-	width: 56px;
-  	height: 56px;
-  	margin-right: 1px;
-  	background-color: rgb(252, 227, 138);
+	list-style: none;	 	
 }
 .li-overlay-a::before{
 	content: '';
 	display: block;
 	height: 100%;
+	width: 56px;
+  	height: 56px;
+  	margin-right: 1px;
 	background-repeat: no-repeat;
 	background-position: center;
-
+	background-color: rgb(252, 227, 138);
 }
 .icon-fb::before{
 	background-image: url('assets/icon-social/icon-facebook.png');
@@ -250,7 +251,7 @@ background-image: url('assets/icon/icon-pic.png');
 .icon-inst::before{
 	background-image: url('assets/icon-social/icon-instagram.png');
 }
-.li-overlay:hover{	
+.li-overlay-a:hover::before{	
   background-color: rgb(149,225,211);
 }
 .secction-ourteam-main-ul-li-div:hover::before {
@@ -260,6 +261,10 @@ background-image: url('assets/icon/icon-pic.png');
 .secction-ourteam-main-ul-li-div:hover .ul-overlay {
 	visibility: visible;	
   }
+.secction-ourteam-main-ul-li-div:hover{
+	transform: translate(-15px,-15px);
+	transition: all 200ms linear;
+}
 .secction-ourteam-main-ul-li-h5{
 	text-align: center;
 	margin-bottom: 18px;
@@ -286,6 +291,13 @@ background-image: url('assets/icon/icon-pic.png');
 	height: 100%;
 }
 
+.footer-info-inputText::placeholder{
+  font-size: 15px;
+  font-family: "Roboto";
+  color: rgb(204, 204, 204);
+  font-style: italic;
+  line-height: 1.6;
+}
 .footer-info-inputText{
   border-style: solid;
   border-width: 1px;
@@ -293,16 +305,10 @@ background-image: url('assets/icon/icon-pic.png');
   background-color: rgb(255, 255, 255);
   width: 232px;
   height: 42px;
+  padding-left: 15px;
 }
 
-.footer-info-inputText::placeholder{
-	  font-size: 15px;
-  font-family: "Roboto";
-  color: rgb(204, 204, 204);
-  font-style: italic;
-  line-height: 1.6;
-  padding-left: 10px;
-}
+
 
 
 form{
@@ -323,7 +329,7 @@ form{
 .footer-info-p{
 	font-family: var(--font-montserrat);
 }
-.footer-info-p-span a{
+.footer-info-p-a{
 color:#f38181;
 text-decoration: none;	
 }
