@@ -1,0 +1,306 @@
+/* montserrat-regular - latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Montserrat Regular'), local('Montserrat-Regular'),
+       url('assets/fonts/montserrat-v14-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('assets/fonts/montserrat-v14-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* montserrat-700 - latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Montserrat Bold'), local('Montserrat-Bold'),
+       url('assets/fonts/montserrat-v14-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('assets/fonts/montserrat-v14-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* montserrat-800 - latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 800;
+  src: local('Montserrat ExtraBold'), local('Montserrat-ExtraBold'),
+       url('assets/fonts/montserrat-v14-latin-800.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('assets/fonts/montserrat-v14-latin-800.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* montserrat-900 - latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 900;
+  src: local('Montserrat Black'), local('Montserrat-Black'),
+       url('assets/fonts/montserrat-v14-latin-900.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('assets/fonts/montserrat-v14-latin-900.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* roboto-regular - latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'), local('Roboto-Regular'),
+       url('assets/fonts/roboto-v20-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('assets/fonts/roboto-v20-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+img{
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+a{
+	text-decoration: none;
+}
+ul{
+	list-style: none;
+}
+.container{
+	width: 320px;
+	margin:0 auto;
+}
+header{
+	background-image: url('assets/img/header-img.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-color: black;
+	padding-bottom: 60px;
+	margin-bottom:75px;
+}
+.header-nav{
+	display: flex;
+	flex-direction: column-reverse;
+	align-items: center;
+	margin-bottom: 40px;
+}
+.header-ul{
+	display: flex;
+	margin-bottom: 132px;
+	margin-top: 32px;	
+}
+.header-nav-a{
+text-transform: uppercase;
+color: white;
+font-size: 20px;
+font-family: "Montserrat",sans-serif;
+font-weight: 700;
+}
+.header-li{
+	margin-right: 5px;	
+}
+.header-li a{
+color:white;
+width: 90px;
+padding: 10px;
+font-family: "Montserrat",sans-serif;
+font-weight: 700;
+  
+}
+
+.header-li a:hover{
+border-style: solid;
+ border-width: 2px;
+  border-color: rgb(255, 255, 255);
+  background-color: rgba(26, 25, 21, 0);
+border-radius: 20px;	
+}
+
+.header-info{
+	text-align: center;
+	color: white;
+}
+.header-info-a{
+	display: inline-block;
+	line-height: 40px;
+	color:white;
+	width: 280px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: rgb(255, 78, 80);
+   	font-family: "Montserrat",sans-serif;
+	font-weight: 700; 
+	font-size: 14px;
+}
+.header-info-h1{
+	text-transform: uppercase;
+	margin-bottom: 21px;
+	font-family: "Montserrat",sans-serif;
+font-weight: 700;
+}
+.header-info-p{
+	margin-bottom: 20px;
+}
+.photo{
+	width: 122px;
+	height:122px;
+	border-radius: 50%;
+	margin:0 auto;
+	position: relative;
+	margin-bottom: 25px;
+}
+.photo > img{
+	border-radius: 50%;
+}
+.main-section-h2{
+	text-align: center;
+	margin-bottom: 20px;
+		font-family: "Montserrat",sans-serif;
+font-weight: 700;
+font-size: 22px;
+}
+.photo::before{
+	content: '';
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	padding: 8px;
+	border-radius: 50%;
+	width: 17px;
+	height:17px;
+	background-repeat: no-repeat;
+	background-position: center;
+	border: 3px solid rgb(255, 255, 255);
+}
+.icon-tv::before{
+	background-image: url(assets/img/icon-tv.png);
+	background-color: #ff4e50;
+
+}
+.icon-himik::before{
+	background-image: url(assets/img/icon-himik.png);
+	background-color: #ffa507;
+
+}
+.icon-tea::before{
+	background-image: url(assets/img/icon-tea.png);
+	background-color: #1cd7ad;
+
+}
+.icon-teleg::before{
+	background-image: url(assets/img/icon-telega.png);
+	background-color: #4e73db;
+
+}
+.main-section-ul{
+	text-align: center;
+	margin-bottom: 30px;
+}
+.main-section-a{
+display: inline-block;
+width: 280px;
+line-height: 40px;
+border-style: solid;
+border-width: 2px;
+border-color: rgb(255, 78, 80);
+border-radius: 20px;
+background-color: rgb(255, 255, 255);
+color:rgb(255, 78, 80);
+}
+.div-link{
+text-align: center;
+margin-bottom: 56px;
+}
+.main-li-div-h5{
+	margin-bottom: 20px;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 700;
+}
+.main-ul-li{
+	margin-bottom: 30px;
+}
+.main-ul-li:last-child{
+	margin-bottom: 0px;
+}
+.main-li-div-p{
+	font-family: 'Roboto',sans-serif;
+	font-size: 14px; 
+  	color: rgb(102, 102, 102);
+  	line-height: 1.2;
+}
+.div-info-name{
+	width: 200px;
+	margin: 0 auto;
+}
+
+@media (min-width: 768px){
+.container{
+	width: 748px;
+}
+.header-ul{
+	margin-bottom: 0px;
+	margin-top: 0px;
+}
+.header-nav{
+	flex-direction: row;
+	justify-content: space-between;
+	margin-bottom: 168px;
+}
+header{
+	padding-top: 50px;
+	background-image: url('assets/img/header-768.png');
+	padding-bottom: 234px;
+}
+.header-info-h1{
+	font-size: 52px;
+	margin-bottom: 50px;
+}
+.header-info-h1-span{
+	display: block;
+}
+.header-info-p{
+	font-size: 24px;
+	margin-bottom: 40px;
+}
+.main-section-ul{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+
+}
+.main-ul-li{
+	width: 250px;
+}
+.header-info-a{
+	font-weight: 400;
+}
+.main-ul-li:nth-last-child(2){
+margin-bottom: 0px;
+}
+.main-section-a{
+	font-weight: 900;
+}
+}
+
+@media (min-width: 960px){
+.container{
+	width: 940px;
+}
+header{
+background-image: url('assets/img/header-lg.png');
+}
+.main-ul-li{
+	width: 220px;
+	margin-bottom: 0px;
+}
+.main-section-ul{
+	justify-content: space-between;
+	margin-bottom: 40px;
+}
+.main-ul-li:nth-child(1){
+order: 0;
+}
+.main-ul-li:nth-child(2){
+order: 1;
+}
+.main-ul-li:nth-child(3){
+order: 0;
+}
+.main-ul-li:nth-child(4){
+order: 1;
+}
+}
