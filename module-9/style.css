@@ -243,10 +243,15 @@ header {
 .header-p{
 	font-size: 24px;
 }
+.main-ul-li:nth-last-child(-n+2){
+	margin-bottom: 0px;
+}
 }
 @media (min-width: 960px){
 header {
     background-image: url(assets/img/header-lg.png);
 }
-
+.main-ul-li{
+	margin-bottom: 0px;
+}
 }
