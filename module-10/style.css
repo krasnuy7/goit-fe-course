@@ -1,5 +1,4 @@
 /* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
-
 :root{
 	--main-color:#95E1D3;
 	--font-montserrat:'Montserrat', sans-serif;
@@ -18,6 +17,10 @@
 	margin: 0px;
 	-webkit-box-sizing: border-box;
 	        box-sizing: border-box;
+}
+.container{
+	width: 1200px;
+	margin: 0 auto;
 }
 .header{
 	padding-top: 32px;
@@ -87,10 +90,7 @@
 .header__svg-btn:not(:last-child){
 margin-right: 30px;
 }
-.container{
-	width: 1200px;
-	margin: 0 auto;
-}
+
 .header-nav-li{
 	list-style: none;
 	position: relative;

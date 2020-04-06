@@ -1,0 +1,73 @@
+.section-services-main-h2{
+	text-align: center;
+	font-family: $font-montserrat;
+	text-transform: uppercase;
+	font-size: 30px;
+	margin-bottom: 66px;
+}
+.section-services-main-h2-span{
+	display: block;
+	font-family: 'Kaushan Script', cursive;
+	text-transform: lowercase;
+	font-size: 24px;
+}
+.section-services-main-h2-span::first-letter{
+	text-transform: uppercase;
+}
+.section-services-main-h2::after{
+	display: block;
+	content: '';
+ 	background-color: rgb(243, 129, 129); 
+  	width: 60px;
+  	height: 3px;
+  	margin: 0 auto; 
+  	margin-top: 42px;
+}
+.section-main-ul-li{
+	width: 320px;
+	list-style: none;
+	background-repeat: no-repeat;
+	padding-left: 50px;
+	background-position: left top;
+	margin-bottom: 100px;
+}
+
+.section-main-ul{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+}
+
+.icon-oclock{
+background-image: url('../images/svg/Photography.svg');	
+}
+.icon-disign{
+background-image: url('../images/svg/Web.svg');	
+}
+.icon-comp{
+background-image: url('../images/svg/computer.svg');	
+}
+.icon-book{
+background-image: url('../images/svg/book.svg');	
+}
+.icon-home{
+background-image: url('../images/svg/home.svg');	
+}
+.icon-pic{
+background-image: url('../images/svg/picture.svg');	
+}
+
+.section-main-ul-li-h5{
+	text-transform: uppercase;
+	padding-bottom: 20px;
+	font-family: $font-montserrat;
+}
